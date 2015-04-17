@@ -1,0 +1,22 @@
+﻿body {
+	width: 32em;
+	border-radius: 5px;
+	font-size: 10pt;
+}
+
+code {
+	padding: 0;
+	padding-top: 0.2em;
+	padding-bottom: 0.2em;
+	margin: 0;
+	background-color: rgba(0,0,0,0.04);
+	border-radius: 3px;
+}
+
+.header {
+	font-size: 12pt;
+}
+
+.right {
+	text-align: right;
+}
