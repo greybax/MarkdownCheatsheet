@@ -4,19 +4,38 @@
 	font-size: 10pt;
 }
 
+footer {
+	width: 32em;
+}
+
 code {
 	padding: 0;
 	padding-top: 0.2em;
 	padding-bottom: 0.2em;
 	margin: 0;
 	background-color: rgba(0,0,0,0.04);
-	border-radius: 3px;
+	border-radius: 3px;	
 }
 
 .header {
 	font-size: 12pt;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 3pt;
+	background-color: #f7f7f7;
+}
+
+.question {
+	float: right;
+	font-size: 9pt;
 }
 
 .right {
-	text-align: right;
+	font-size: 9pt;
+	float: right;
+}
+
+.left {
+	font-size: 9pt;
+	float: left;
 }
