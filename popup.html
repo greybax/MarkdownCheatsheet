@@ -139,7 +139,22 @@
 			<ul>
 				<li> <code>* valid bullet</code> </li>
 				<li> <code>- valid bullet</code> </li>
-				<li> <code>+ valid bullet</code> </li>	
+				<li> <code>+ valid bullet</code> </li>
+<b>Example</b>
+<pre>
++ Lorem ipsum dolor sit amet
++ Consectetur adipiscing elit
++ Integer molestie lorem at massa
++ Facilisis in pretium nisl aliquet
++ Nulla volutpat aliquam velit
+  - Phasellus iaculis neque
+  - Purus sodales ultricies
+  - Vestibulum laoreet porttitor sem
+  - Ac tristique libero volutpat at
++ Faucibus porta lacus fringilla vel
++ Aenean sit amet erat nunc
++ Eget porttitor lorem
+</pre>
 			</ul>
 		</li>
 		<li> Ordered
@@ -166,7 +181,7 @@
 				</pre>				
 			"
 			data-html="true"> renders to </a>
-			<img src="images/question.png"> 
+			<img src="images/question.png">
 		</span>
 	</div>
 	<ul>
@@ -199,11 +214,45 @@
 	</ul>
 	<div class="header">
 		<span class="title"> Tables </span>
-		<span class="question"> <img src="images/question.png"> </span>
+		<span class="question">
+			<a tabindex="0" role="button" data-toggle="popover" data-placement="left" data-trigger="focus" title="Renders to" data-content="
+				<table>
+				  <tr>
+				    <th>Option</th>
+				    <th>Description</th>
+				  </tr>
+				  <tr>
+				    <td>data</td>
+				    <td>path to data files to supply the data that will be passed into templates.</td>
+				  </tr>
+				  <tr>
+				    <td>engine</td>
+				    <td>engine to be used for processing templates. Handlebars is the default.</td>
+				  </tr>
+				  <tr>
+				    <td>ext</td>
+				    <td>extension to be used for dest files.</td>
+				  </tr>
+				</table>
+			"
+			data-html="true"> renders to </a>
+			<img src="images/question.png"> 
+		</span>
 	</div>
 	<ul>
-		<li> Tables are created by adding pipes as dividers between each cell, and by adding a line of dashes (also separated by bars) beneath the header. 
-		Note that the pipes do not need to be vertically aligned.
+		<li> 
+			<p>
+				Tables are created by adding pipes as dividers between each cell, and by adding a line of dashes (also separated by bars) beneath the header. 
+				Note that the pipes do not need to be vertically aligned.
+			</p>
+<b>Example</b>
+<pre>
+| Option | Description |
+| ------ | ----------- |
+| data   | path to data files. |
+| engine | engine to be used for processing templates. |
+| ext    | extension to be used for dest files. |
+</pre>
 		</li>
 	</ul>
 	<div class="header">

@@ -17,6 +17,18 @@ code {
 	border-radius: 3px;	
 }
 
+table, th, tr, td {
+	border: 1px solid #000;
+}
+
+ul {
+	margin-right: 10pt;
+}
+
+pre {
+	font-size: 80%;
+}
+
 .header {
 	font-size: 12pt;
 	border: 1px solid #ddd;
