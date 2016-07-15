@@ -1,7 +1,8 @@
 <!doctype html>
 <html>
-  <head>
-    <title>Markdown Cheatsheet</title>
+
+<head>
+	<title>Markdown Cheatsheet</title>
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -9,300 +10,519 @@
 	<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
+</head>
 
-  </head>
-  <body>
-    <div class="header">
-    	<span class="title"> Headers </span>
-    	<span class="question"> 
-			<a tabindex="0" role="button" data-toggle="popover" data-placement="left" data-trigger="focus" title="Renders to" data-content="
-				<h1>h1 Heading</h1>
-				<h2>h2 Heading</h2>
-				<h3>h3 Heading</h3>
-				<h4>h4 Heading</h4>
-				<h5>h5 Heading</h5>
-				<h6>h6 Heading</h6>
-			" data-html="true"> renders to </a>
-    		<img src="images/question.png"> 
-    	</span>
-    </div>
-	<ul>
-		<li> <code>#</code> h1 Heading </li>
-		<li> <code>##</code> h2 Heading </li>
-		<li> <code>###</code> h3 Heading </li>
-		<li> <code>####</code> h4 Heading </li>
-		<li> <code>#####</code> h5 Heading </li>
-		<li> <code>######</code> h6 Heading </li>
+<body>
+	<!-- Nav tabs -->
+	<ul class="nav nav-tabs width32" role="tablist">
+		<li role="presentation" class="active width16 textCenter">
+			<a href="#basic" aria-controls="basic" role="tab" data-toggle="tab">Basic</a>
+		</li>
+		<li role="presentation" class="width16 textCenter">
+			<a href="#gfm" aria-controls="gfm" role="tab" data-toggle="tab">GFM</a>
+		</li>
 	</ul>
-	<div class="header">
-		<span class="title"> Horizontal Rules </span>
-		<span class="question"> 
-			<a tabindex="0" role="button" data-toggle="popover" data-placement="left" data-trigger="focus" title="Renders to" data-content="
-				<hr>
-				<hr>
-				<hr>
-			" data-html="true"> renders to </a>
-			<img src="images/question.png">
-		</span>
-	</div>
-	<ul>
-		<li> <code>___</code> 3 consecutive underscores </li>
-		<li> <code>---</code> 3 consecutive dashes </li>
-		<li> <code>***</code> 3 consecutive asterisks </li>
-	</ul>
-	<div class="header">
-		<span class="title"> Body Copy </span>
-		<span class="question"> 
-			<a tabindex="0" role="button" data-toggle="popover" data-placement="left" data-trigger="focus" title="Renders to" data-content="<p>Lorem ipsum dolor sit amet, graecis denique ei vel, at duo primis mandamus. Et legere ocurreret pri, animal tacimates complectitur ad cum. Cu eum inermis inimicus efficiendi. Labore officiis his ex, soluta officiis concludaturque ei qui, vide sensibus vim ad.</p>" 
-			data-html="true"> renders to </a>
-			<img src="images/question.png"> 
-		</span>
-	</div>
-	<ul>
-		<li> Body copy written as normal, plain text will be wrapped with <code> < p>< /p> </code> tags in the rendered HTML </li>
-	</ul>
-	<div class="header">
-		<span class="title"> Emphasis </span>
-		<span class="question"> 
-			<a tabindex="0" role="button" data-toggle="popover" data-placement="left" data-trigger="focus" title="Renders to" data-content="
-			<ul>
-				<li> <strong>rendered as bold text</strong> </li>
-				<li> <em>rendered as italicized text</em> </li>
-				<li> <strike>Strike through this text</strike> </li>
-			</ul>		
-			"
-			data-html="true"> renders to </a>
-			<img src="images/question.png"> 
-		</span>
-	</div>
-	<ul>
-		<li> <code>** rendered as bold text **</code> </li>
-		<li> <code>_ rendered as italicized text _</code> </li>
-		<li> <code>~~ Strike through this text ~~</code> </li>
-	</ul>
-	<div class="header">
-		<span class="title"> Blockquotes </span>
-		<span class="question"> 
-			<a tabindex="0" role="button" data-toggle="popover" data-placement="left" data-trigger="focus" title="Renders to" data-content="
-				<blockquote>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-				</blockquote>		
-			"
-			data-html="true"> renders to </a>
-			<img src="images/question.png"> 
-		</span>
-	</div>
-	<ul>
-		<li> Add <code> > </code> before any text you want to quote</li>
-	</ul>
-	<div class="header">
-		<span class="title"> Lists </span>
-		<span class="question"> 
-			<a tabindex="0" role="button" data-toggle="popover" data-placement="left" data-trigger="focus" title="Renders to" data-content="
-				<b>Unordered</b>
-				<ul>
-				  <li>Lorem ipsum dolor sit amet</li>
-				  <li>Consectetur adipiscing elit</li>
-				  <li>Integer molestie lorem at massa</li>
-				  <li>Facilisis in pretium nisl aliquet</li>
-				  <li>Nulla volutpat aliquam velit
-				    <ul>
-				      <li>Phasellus iaculis neque</li>
-				      <li>Purus sodales ultricies</li>
-				      <li>Vestibulum laoreet porttitor sem</li>
-				      <li>Ac tristique libero volutpat at</li>
-				    </ul>
-				  </li>
-				  <li>Faucibus porta lacus fringilla vel</li>
-				  <li>Aenean sit amet erat nunc</li>
-				  <li>Eget porttitor lorem</li>
-				</ul>
 
-				<b>Ordered</b>
-				<ol>
-				  <li>Lorem ipsum dolor sit amet</li>
-				  <li>Consectetur adipiscing elit</li>
-				  <li>Integer molestie lorem at massa</li>
-				  <li>Facilisis in pretium nisl aliquet</li>
-				  <li>Nulla volutpat aliquam velit</li>
-				  <li>Faucibus porta lacus fringilla vel</li>
-				  <li>Aenean sit amet erat nunc</li>
-				  <li>Eget porttitor lorem</li>
-				</ol>	
-			"
-			data-html="true"> renders to </a>
-			<img src="images/question.png"> 
-		</span>
-	</div>
-	<ul>
-		<li> Unordered
+	<!-- Tab panes -->
+	<div class="tab-content">
+		<!-- Basic Markdown -->
+		<div role="tabpanel" class="tab-pane active" id="basic">
+			<div class="header">
+				<span class="title"> Headers </span>
+				<span class="question"> 
+					<a tabindex="0" role="button" data-toggle="popover" data-placement="left" data-trigger="focus" title="Renders to" data-content="
+						<h1>h1 Heading</h1>
+						<h2>h2 Heading</h2>
+						<h3>h3 Heading</h3>
+						<h4>h4 Heading</h4>
+						<h5>h5 Heading</h5>
+						<h6>h6 Heading</h6>
+					" data-html="true"> renders to </a>
+					<img src="images/question.png" />
+				</span>
+			</div>
 			<ul>
-				<li> <code>* valid bullet</code> </li>
-				<li> <code>- valid bullet</code> </li>
-				<li> <code>+ valid bullet</code> </li>
-<b>Example</b>
+				<li> <code>#</code> h1 Heading </li>
+				<li> <code>##</code> h2 Heading </li>
+				<li> <code>###</code> h3 Heading </li>
+				<li> <code>####</code> h4 Heading </li>
+				<li> <code>#####</code> h5 Heading </li>
+				<li> <code>######</code> h6 Heading </li>
+			</ul>
+			<div class="header">
+				<span class="title"> Horizontal Rules </span>
+				<span class="question"> 
+					<a tabindex="0" role="button" data-toggle="popover" data-placement="left" data-trigger="focus" title="Renders to" data-content="
+						<hr>
+						<hr>
+						<hr>
+					" data-html="true"> renders to </a>
+					<img src="images/question.png" />
+				</span>
+			</div>
+			<ul>
+				<li> <code>___</code> 3 consecutive underscores </li>
+				<li> <code>---</code> 3 consecutive dashes </li>
+				<li> <code>***</code> 3 consecutive asterisks </li>
+			</ul>
+			<div class="header">
+				<span class="title"> Body Copy </span>
+				<span class="question"> 
+					<a tabindex="0" role="button" data-toggle="popover" data-placement="left" data-trigger="focus" title="Renders to" data-content="<p>Lorem ipsum dolor sit amet, graecis denique ei vel, at duo primis mandamus. Et legere ocurreret pri, animal tacimates complectitur ad cum. Cu eum inermis inimicus efficiendi. Labore officiis his ex, soluta officiis concludaturque ei qui, vide sensibus vim ad.</p>" 
+					data-html="true"> renders to </a>
+					<img src="images/question.png" /> 
+				</span>
+			</div>
+			<ul>
+				<li> Body copy written as normal, plain text will be wrapped with <code> < p>< /p> </code> tags in the rendered HTML </li>
+			</ul>
+			<div class="header">
+				<span class="title"> Emphasis </span>
+				<span class="question"> 
+					<a tabindex="0" role="button" data-toggle="popover" data-placement="left" data-trigger="focus" title="Renders to" data-content="
+					<ul>
+						<li> <strong>rendered as bold text</strong> </li>
+						<li> <em>rendered as italicized text</em> </li>
+						<li> <strike>Strike through this text</strike> </li>
+					</ul>		
+					"
+					data-html="true"> renders to </a>
+					<img src="images/question.png" /> 
+				</span>
+			</div>
+			<ul>
+				<li> <code>** rendered as bold text **</code> </li>
+				<li> <code>_ rendered as italicized text _</code> </li>
+				<li> <code>~~ Strike through this text ~~</code> </li>
+			</ul>
+			<div class="header">
+				<span class="title"> Blockquotes </span>
+				<span class="question"> 
+					<a tabindex="0" role="button" data-toggle="popover" data-placement="left" data-trigger="focus" title="Renders to" data-content="
+						<blockquote>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+						</blockquote>
+					"
+					data-html="true"> renders to </a>
+					<img src="images/question.png" />
+				</span>
+			</div>
+			<ul>
+				<li> Add <code> > </code> before any text you want to quote</li>
+			</ul>
+			<div class="header">
+				<span class="title"> Lists </span>
+				<span class="question"> 
+					<a tabindex="0" role="button" data-toggle="popover" data-placement="left" data-trigger="focus" title="Renders to" data-content="
+						<b>Unordered</b>
+						<ul>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Consectetur adipiscing elit</li>
+						<li>Integer molestie lorem at massa</li>
+						<li>Facilisis in pretium nisl aliquet</li>
+						<li>Nulla volutpat aliquam velit
+							<ul>
+							<li>Phasellus iaculis neque</li>
+							<li>Purus sodales ultricies</li>
+							<li>Vestibulum laoreet porttitor sem</li>
+							<li>Ac tristique libero volutpat at</li>
+							</ul>
+						</li>
+						<li>Faucibus porta lacus fringilla vel</li>
+						<li>Aenean sit amet erat nunc</li>
+						<li>Eget porttitor lorem</li>
+						</ul>
+
+						<b>Ordered</b>
+						<ol>
+							<li>Lorem ipsum dolor sit amet</li>
+							<li>Consectetur adipiscing elit</li>
+							<li>Integer molestie lorem at massa</li>
+							<li>Facilisis in pretium nisl aliquet</li>
+							<li>Nulla volutpat aliquam velit</li>
+							<li>Faucibus porta lacus fringilla vel</li>
+							<li>Aenean sit amet erat nunc</li>
+							<li>Eget porttitor lorem</li>
+						</ol>	
+					"
+					data-html="true"> renders to </a>
+					<img src="images/question.png" /> 
+				</span>
+			</div>
+			<ul>
+				<li> Unordered
+					<ul>
+						<li> <code>* valid bullet</code> </li>
+						<li> <code>- valid bullet</code> </li>
+						<li> <code>+ valid bullet</code> </li>
+						<b>Example</b>
 <pre>
-+ Lorem ipsum dolor sit amet
-+ Consectetur adipiscing elit
-+ Integer molestie lorem at massa
-+ Facilisis in pretium nisl aliquet
-+ Nulla volutpat aliquam velit
-  - Phasellus iaculis neque
-  - Purus sodales ultricies
-  - Vestibulum laoreet porttitor sem
++ Lorem ipsum dolor sit amet 
++ Consectetur adipiscing elit 
++ Integer molestie lorem at massa 
++ Facilisis in pretium nisl aliquet 
++ Nulla volutpat aliquam velit 
+  - Phasellus iaculis neque 
+  - Purus sodales ultricies 
+  - Vestibulum laoreet porttitorsem 
   - Ac tristique libero volutpat at
 + Faucibus porta lacus fringilla vel
 + Aenean sit amet erat nunc
 + Eget porttitor lorem
 </pre>
-			</ul>
-		</li>
-		<li> Ordered
-			<ul>
-				<li> <code>1. Lorem ipsum dolor sit amet</code> </li>
-				<li> <code>2. Consectetur adipiscing elit</code> </li>
-				<li> <code>3. Integer molestie lorem at massa</code> </li>	
-			</ul>
-		</li>
-	</ul>
-	<div class="header">
-		<span class="title"> Code </span>
-		<span class="question">
-			<a tabindex="0" role="button" data-toggle="popover" data-placement="left" data-trigger="focus" title="Renders to" data-content="
-				<b>Inline code</b>
-				<p>For example, <code>< section>< /section></code> should be wrapped as 'inline'.</p>
-				<b>Indented code</b>
-				<p><code>    // it's 1st comment</code></p>
-				<p><code>    // it's 2nd comment</code></p>
-				<p><code>    // it's 3rd comment</code></p>
-				<b>Block code 'fences'</b>
-				<pre>
-				  <p>Sample text here...</p>
-				</pre>				
-			"
-			data-html="true"> renders to </a>
-			<img src="images/question.png">
-		</span>
-	</div>
-	<ul>
-		<li> Inline code
-			<ul>
-				<li> Wrap inline snippets of code with <code>`</code> </li>
-			</ul>
-		</li>
-		<li> Indented code
-			<ul>
-				<li> Or indent several lines of code by at least 4 spaces, as in: 
-					<code>    // it's a comment </code>
+					</ul>
+				</li>
+				<li> Ordered
+					<ul>
+						<li> <code>1. Lorem ipsum dolor sit amet</code> </li>
+						<li> <code>2. Consectetur adipiscing elit</code> </li>
+						<li> <code>3. Integer molestie lorem at massa</code> </li>
+					</ul>
 				</li>
 			</ul>
-		</li>
-		<li> Block code "fences"
+			<div class="header">
+				<span class="title"> Code </span>
+				<span class="question">
+					<a tabindex="0" role="button" data-toggle="popover" data-placement="left" data-trigger="focus" title="Renders to" data-content="
+						<b>Inline code</b>
+						<p>For example, <code>< section>< /section></code> should be wrapped as 'inline'.</p>
+					"
+					data-html="true"> renders to </a>
+					<img src="images/question.png" />
+				</span>
+			</div>
 			<ul>
-				<li> Use "fences"  <code>```</code> to block in multiple lines of code. </li>
-			</ul>
-		</li>
-		<li> Syntax highlighting
-			<ul>
-				<li> GFM, or "GitHub Flavored Markdown" also supports syntax highlighting. 
-				To activate it, simply add the file extension of the language you want to use directly 
-				after the first code "fence", <code>``` javascript </code>, and syntax highlighting will automatically be applied in the
-				rendered HTML.
+				<li> Inline code
+					<ul>
+						<li> Wrap inline snippets of code with <code>`</code> </li>
+					</ul>
 				</li>
 			</ul>
-		</li>
-	</ul>
-	<div class="header">
-		<span class="title"> Tables </span>
-		<span class="question">
-			<a tabindex="0" role="button" data-toggle="popover" data-placement="left" data-trigger="focus" title="Renders to" data-content="
-				<table>
-				  <tr>
-				    <th>Option</th>
-				    <th>Description</th>
-				  </tr>
-				  <tr>
-				    <td>data</td>
-				    <td>path to data files to supply the data that will be passed into templates.</td>
-				  </tr>
-				  <tr>
-				    <td>engine</td>
-				    <td>engine to be used for processing templates. Handlebars is the default.</td>
-				  </tr>
-				  <tr>
-				    <td>ext</td>
-				    <td>extension to be used for dest files.</td>
-				  </tr>
-				</table>
-			"
-			data-html="true"> renders to </a>
-			<img src="images/question.png"> 
-		</span>
-	</div>
-	<ul>
-		<li> 
-			<p>
-				Tables are created by adding pipes as dividers between each cell, and by adding a line of dashes (also separated by bars) beneath the header. 
-				Note that the pipes do not need to be vertically aligned.
-			</p>
-<b>Example</b>
+			<div class="header">
+				<span class="title"> Links </span>
+				<span class="question">
+					<a tabindex="0" role="button" data-toggle="popover" data-placement="left" data-trigger="focus" title="Renders to" data-content="
+						<b>Basic link</b>
+						<p><a href='http://markdown.github.io'>Markdown</a></p>
+						<b>Add a title</b>
+						<p><a href='https://github.com/markdown/' title='Visit markdown!'>Markdown</a></p>
+					"
+					data-html="true"> renders to </a>
+					<img src="images/question.png" />
+				</span>
+			</div>
+			<ul>
+				<li>Basic link <code>[Markdown](http://markdown.github.io)</code> </li>
+				<li>Add a title <code>[Markdown](https://github.com/markdown/ "Visit markdown!")</code> </li>
+				<li>Named Anchors <code>* [Chapter 1](#chapter-1)</code> </li>
+			</ul>
+			<div class="header">
+				<span class="title"> Images </span>
+				<span class="question">
+					<a tabindex="0" role="button" data-toggle="popover" data-placement="left" data-trigger="focus" title="Renders to" data-content="
+						<p>
+							<img src='https://camo.githubusercontent.com/21dbea15b90151a65e7f77d17be4270619e0c10f/687474703a2f2f6f63746f6465782e6769746875622e636f6d2f696d616765732f6d696e696f6e2e706e67' alt='Minion' data-canonical-src='http://octodex.github.com/images/minion.png' style='max-width:100%;'>
+						</p>
+						<b>or</b>
+						<p>
+							<img src='https://camo.githubusercontent.com/6f1e9bd4ebd02f42ff14f7960b783a647d3458be/687474703a2f2f6f63746f6465782e6769746875622e636f6d2f696d616765732f73746f726d74726f6f706f6361742e6a7067' alt='Alt text' title='The Stormtroopocat' data-canonical-src='http://octodex.github.com/images/stormtroopocat.jpg' style='max-width:100%;'>
+						</p>
+					"
+					data-html="true"> renders to </a>
+					<img src="images/question.png" />
+				</span>
+			</div>
+			<ul>
+				<li> <code>![Minion](http://octodex.github.com/images/minion.png)</code> </li>
+				<li> <code>![Alt text](http://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")</code> </li>
+				<li> <code>![Alt text][id]</code> </li>
+			</ul>
+		</div>
+
+		<!-- Github Flavored Markdown -->
+		<div role="tabpanel" class="tab-pane" id="gfm">
+			<div class="header">
+				<span class="title"> Code </span>
+				<span class="question">
+					<a tabindex="0" role="button" data-toggle="popover" data-placement="left" data-trigger="focus" title="Renders to" data-content="
+						<b>Indented code</b>
+						<p><code>    // it's 1st comment</code></p>
+						<p><code>    // it's 2nd comment</code></p>
+						<b>Block code 'fences'</b>
+						<pre>
+						<p>Sample text here...</p>
+						</pre>
+						<pre><code>function fancyAlert(arg) {</code>
+							<code>  if(arg) {</code>
+							<code>    $.facebox({div:'#foo'})</code>
+							<code>  }</code>
+							<code>}</code></pre>
+					"
+					data-html="true"> renders to </a>
+					<img src="images/question.png" />
+				</span>
+			</div>
+			<ul>
+				<li> Indented code
+					<ul>
+						<li> Indent several lines of code by at least 4 spaces, as in:
+							<code>    // it's a comment </code>
+						</li>
+					</ul>
+				</li>
+				<li> Block code "fences"
+					<ul>
+						<li> Use "fences" <code>```</code> to block in multiple lines of code. </li>
+					</ul>
+				</li>
+				<li> Syntax highlighting
+					<ul>
+						<li>
+<pre>
+```javascript
+function fancyAlert(arg) {
+  if(arg) {
+    $.facebox({div:'#foo'})
+  }
+}
+```
+</pre>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<div class="header">
+				<span class="title"> Tasks List </span>
+				<span class="question">
+					<a tabindex="0" role="button" data-toggle="popover" data-placement="left" data-trigger="focus" title="Renders to" data-content="
+						<input type='checkbox' checked='' disabled=''> <a href='#' class='user-mention'>@mentions</a>, #refs, <a href='#'>links</a>, <strong>formatting</strong>, and <del>tags</del> supported </input> <br />
+						<input type='checkbox' checked='' disabled=''> list syntax required (any unordered or ordered list supported) </input><br />
+						<input type='checkbox' checked='' disabled=''> this is a complete item </input><br />
+						<input type='checkbox' disabled=''> this is an incomplete item </input><br />
+					"
+					data-html="true"> renders to </a>
+					<img src="images/question.png" />
+				</span>
+			</div>
+			<ul>
+				<li>
+					<p>
+						If you include a task list in the first comment of an Issue, you will get a handy progress indicator in your issue list. 
+						It also works in Pull Requests!
+					</p>
+					<b>Example</b>
+<pre>
+- [x] @mentions, #refs, [links](), **formatting**, and <del>tags</del> supported
+- [x] list syntax required (any unordered or ordered list supported)
+- [x] this is a complete item
+- [ ] this is an incomplete item
+</pre>
+				</li>
+			</ul>
+			<div class="header">
+				<span class="title"> Tables </span>
+				<span class="question">
+					<a tabindex="0" role="button" data-toggle="popover" data-placement="left" data-trigger="focus" title="Renders to" data-content="
+						<table>
+						<tr>
+							<th>Option</th>
+							<th>Description</th>
+						</tr>
+						<tr>
+							<td>data</td>
+							<td>path to data files to supply the data that will be passed into templates.</td>
+						</tr>
+						<tr>
+							<td>engine</td>
+							<td>engine to be used for processing templates. Handlebars is the default.</td>
+						</tr>
+						<tr>
+							<td>ext</td>
+							<td>extension to be used for dest files.</td>
+						</tr>
+						</table>
+					"
+					data-html="true"> renders to </a>
+					<img src="images/question.png" />
+				</span>
+			</div>
+			<ul>
+				<li>
+					<p>
+						Tables are created by adding pipes as dividers between each cell, and by adding a line of dashes (also separated by bars)
+						beneath the header. Note that the pipes do not need to be vertically aligned.
+					</p>
+					<b>Example</b>
 <pre>
 | Option | Description |
 | ------ | ----------- |
-| data   | path to data files. |
+| data | path to data files. |
 | engine | engine to be used for processing templates. |
-| ext    | extension to be used for dest files. |
+| ext | extension to be used for dest files. |
 </pre>
-		</li>
-	</ul>
-	<div class="header">
-		<span class="title"> Links </span>
-		<span class="question">
-			<a tabindex="0" role="button" data-toggle="popover" data-placement="left" data-trigger="focus" title="Renders to" data-content="
-				<b>Basic link</b>
-				<p><a href='http://markdown.github.io'>Markdown</a></p>
-				<b>Add a title</b>
-				<p><a href='https://github.com/markdown/' title='Visit markdown!'>Markdown</a></p>
-			"
-			data-html="true"> renders to </a>
-			<img src="images/question.png"> 
-		</span>
+				</li>
+			</ul>
+			<div class="header">
+				<span class="title"> Strikethrough </span>
+				<span class="question">
+					<a tabindex="0" role="button" data-toggle="popover" data-placement="left" data-trigger="focus" title="Renders to" data-content="
+						<p>
+							<del>this is crossed out text</del>
+						</p>
+					"
+					data-html="true"> renders to </a>
+					<img src="images/question.png" />
+				</span>
+			</div>
+			<ul>
+				<li>
+					<p>
+						Any word wrapped with two tildes (like <code>~~this~~</code>) will appear crossed out.
+					</p>
+					<b>Example</b>
+<pre>
+~~this is crossed out text~~
+</pre>
+				</li>
+			</ul>
+			<div class="header">
+				<span class="title"> SHA references </span>
+				<span class="question">
+					<a tabindex="0" role="button" data-toggle="popover" data-placement="left" data-trigger="focus" title="Renders to" data-content="
+						<p>16c999e8c71134401a78d4d46435517b2271d6ac<br>
+							<a href='https://github.com/mojombo/MarkdownCheatsheet/commit/16c999e8c71134401a78d4d46435517b2271d6ac'>mojombo@<tt>16c999e</tt></a><br>
+							<a href='https://github.com/mojombo/github-flavored-markdown/commit/16c999e8c71134401a78d4d46435517b2271d6ac'>mojombo/github-flavored-markdown@<tt>16c999e</tt></a>
+						</p>
+					"
+					data-html="true"> renders to </a>
+					<img src="images/question.png" />
+				</span>
+			</div>
+			<ul>
+				<li>
+					<p>
+						Any reference to a commit’s SHA-1 hash will be automatically converted into a link to that commit on GitHub.
+					</p>
+					<b>Example</b>
+<pre>
+16c999e8c71134401a78d4d46435517b2271d6ac
+mojombo@16c999e8c71134401a78d4d46435517b2271d6ac
+mojombo/github-flavored-markdown@16c999e8c71134401a78d4d46435517b2271d6ac
+</pre>
+				</li>
+			</ul>
+			<div class="header">
+				<span class="title"> Issue references within a repository </span>
+				<span class="question">
+					<a tabindex="0" role="button" data-toggle="popover" data-placement="left" data-trigger="focus" title="Renders to" data-content="
+						<p>
+							<a href='https://github.com/greybax/MarkdownCheatsheet/issues/1' title='Add GFM' target='blank'>#1</a><br>
+							<a href='https://github.com/greybax/MarkdownCheatsheet/issues/1' title='Add GFM' target='blank'>greybax#1</a><br>
+							<a href='https://github.com/greybax/MarkdownCheatsheet/issues/1' title='Add GFM' target='blank'>greybax/MarkdownCheatsheet#1</a>
+						</p>
+					"
+					data-html="true"> renders to </a>
+					<img src="images/question.png" />
+				</span>
+			</div>
+			<ul>
+				<li>
+					<p>
+						Any number that refers to an Issue or Pull Request will be automatically converted into a link.
+					</p>
+					<b>Example</b>
+<pre>
+#1
+greybax#1
+greybax/MarkdownCheatsheet#1
+</pre>
+				</li>
+			</ul>
+			<div class="header">
+				<span class="title"> Username @mentions </span>
+				<span class="question">
+					<a tabindex="0" role="button" data-toggle="popover" data-placement="left" data-trigger="focus" title="Renders to" data-content="
+						<p>
+							<a href='https://github.com/greybax' title='greybax' target='blank'>greybax</a><br>
+						</p>
+					"
+					data-html="true"> renders to </a>
+					<img src="images/question.png" />
+				</span>
+			</div>
+			<ul>
+				<li>
+					<p>
+						Typing an <code>@</code> symbol, followed by a username, will notify that person to come and view the comment.
+						This is called an “@mention”, because you’re mentioning the individual.
+						You can also @mention teams within an organization.
+					</p>
+					<b>Example</b>
+<pre>
+@greybax
+</pre>
+				</li>
+			</ul>
+			<div class="header">
+				<span class="title"> Automatic linking for URLs </span>
+				<span class="question">
+					<a tabindex="0" role="button" data-toggle="popover" data-placement="left" data-trigger="focus" title="Renders to" data-content="
+						<p>
+							<a href='https://github.com' target='blank'>github.com</a>
+						</p>
+					"
+					data-html="true"> renders to </a>
+					<img src="images/question.png" />
+				</span>
+			</div>
+			<ul>
+				<li>
+					<p>
+						Any URL (like <code>http://www.github.com/</code>) will be automatically converted into a clickable link.
+					</p>
+					<b>Example</b>
+<pre>
+http://www.github.com/
+</pre>
+				</li>
+			</ul>
+			<div class="header">
+				<span class="title"> Emoji </span>
+				<span class="question">
+					<a tabindex="0" role="button" data-toggle="popover" data-placement="left" data-trigger="focus" title="Renders to" data-content="
+						<p>
+							To see a list of every image GitHub support, check out the
+							<a href='http://www.emoji-cheat-sheet.com/' target='blank'>Emoji Cheat Sheet</a>.
+						</p>
+					"
+					data-html="true"> renders to </a>
+					<img src="images/question.png" />
+				</span>
+			</div>
+			<ul>
+				<li>
+					<p>
+						GitHub supports emoji! 
+					</p>
+					<b>Example</b>
+<pre>
+:sparkles: :camel: :boom:
+</pre>
+				</li>
+			</ul>
+		</div>
 	</div>
-	<ul>
-		<li>Basic link <code>[Markdown](http://markdown.github.io)</code> </li>
-		<li>Add a title <code>[Markdown](https://github.com/markdown/ "Visit markdown!")</code> </li>
-		<li>Named Anchors <code>* [Chapter 1](#chapter-1)</code> </li>
-	</ul>
-	<div class="header">
-		<span class="title"> Images </span>
-		<span class="question">
-			<a tabindex="0" role="button" data-toggle="popover" data-placement="left" data-trigger="focus" title="Renders to" data-content="
-				<p>
-					<img src='https://camo.githubusercontent.com/21dbea15b90151a65e7f77d17be4270619e0c10f/687474703a2f2f6f63746f6465782e6769746875622e636f6d2f696d616765732f6d696e696f6e2e706e67' alt='Minion' data-canonical-src='http://octodex.github.com/images/minion.png' style='max-width:100%;'>
-				</p>
-				<b>or</b>
-				<p>
-					<img src='https://camo.githubusercontent.com/6f1e9bd4ebd02f42ff14f7960b783a647d3458be/687474703a2f2f6f63746f6465782e6769746875622e636f6d2f696d616765732f73746f726d74726f6f706f6361742e6a7067' alt='Alt text' title='The Stormtroopocat' data-canonical-src='http://octodex.github.com/images/stormtroopocat.jpg' style='max-width:100%;'>
-				</p>
-			"
-			data-html="true"> renders to </a>
-			<img src="images/question.png"> 
-		</span>
-	</div>
-	<ul>
-		<li> <code>![Minion](http://octodex.github.com/images/minion.png)</code> </li>
-		<li> <code>![Alt text](http://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")</code> </li>
-		<li> <code>![Alt text][id]</code> </li>
-	</ul>
-  </body>
-  <footer >
-  	<span class="left">
-  		Data from <a href="http://assemble.io/docs/Cheatsheet-Markdown.html" target="blank">assemble.io/docs/Cheatsheet-Markdown</a>
+</body>
+
+<footer>
+	<span class="left">
+  		Data from <a href="https://guides.github.com/features/mastering-markdown" target="blank">guides.github.com/features/mastering-markdown</a>
   	</span>
 	<span class="right">
 		<a href="https://github.com/greybax/MarkdownCheatsheet" target="blank">See on GitHub 
 			<img src="images/github.png" alt="">
 		</a>
 	</span>
-  </footer>
+</footer>
+
 </html>

@@ -1,6 +1,5 @@
 ﻿body {
 	width: 32em;
-	border-radius: 5px;
 	font-size: 10pt;
 }
 
@@ -50,4 +49,16 @@ pre {
 .left {
 	font-size: 9pt;
 	float: left;
+}
+
+.width16 {
+	width: 16em;
+}
+
+.width32 {
+	width: 32em;
+}
+
+.textCenter {
+	text-align: center;
 }
