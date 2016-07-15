@@ -62,3 +62,20 @@ pre {
 .textCenter {
 	text-align: center;
 }
+
+/* it's hack, should use navbar instead of tabs*/
+.fixed-top {
+	position: fixed;
+	left: 0;
+	right: 0;
+}
+
+.tab-content {
+	padding-top: 3em;
+}
+
+.white {
+	background-color: #fff;
+}
+
+/* it's hack, should use navbar instead of tabs*/
