@@ -1,35 +1,27 @@
 ﻿body {
 	width: 32em;
-	font-size: 10pt;
-}
-
-footer {
-	width: 32em;
+	font-size: 11pt;
 }
 
 code {
-	padding: 0;
-	padding-top: 0.2em;
-	padding-bottom: 0.2em;
-	margin: 0;
 	background-color: rgba(0,0,0,0.04);
-	border-radius: 3px;	
+	border-radius: 5px;
 }
 
 table, th, tr, td {
 	border: 1px solid #000;
 }
 
-ul {
-	margin-right: 10pt;
+ul ul {
+	padding-left: 1em;
 }
 
-pre {
-	font-size: 80%;
+.nav-tabs > li > a {
+	font-size: 12pt;
 }
 
 .header {
-	font-size: 12pt;
+	font-size: 14pt;
 	border: 1px solid #ddd;
 	border-radius: 3px;
 	padding: 3pt;
@@ -66,15 +58,13 @@ pre {
 /* it's hack, should use navbar instead of tabs*/
 .fixed-top {
 	position: fixed;
-	left: 0;
-	right: 0;
 }
 
 .tab-content {
 	padding-top: 3em;
 }
 
-.white {
+.no-transparent {
 	background-color: #fff;
 }
 

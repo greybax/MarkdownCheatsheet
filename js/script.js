@@ -1,9 +1,4 @@
-$(document).ready(function () {
+document.addEventListener('DOMContentLoaded', () => {
 	$('.question a').popover();
-
-	$('#myTabs a').click(function (e) {
-		e.preventDefault()
-		$(this).tab('show')
-	})
 });
 
