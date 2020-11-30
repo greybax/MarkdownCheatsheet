@@ -4,8 +4,6 @@
 [![Chrome Web Store](https://img.shields.io/chrome-web-store/users/hoglmefbfenoehjeblinfijldanifljm.svg)](https://chrome.google.com/webstore/detail/markdown-cheatsheet/hoglmefbfenoehjeblinfijldanifljm)
 [![Chrome Web Store](https://img.shields.io/chrome-web-store/v/hoglmefbfenoehjeblinfijldanifljm.svg)](https://chrome.google.com/webstore/detail/markdown-cheatsheet/hoglmefbfenoehjeblinfijldanifljm)
 
-[![Patreon](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/bePatron?u=14980891)
-
 This is handy "Markdown Cheatsheet" Chrome extension. For now you shouldn't remember any markdown tag and surf the internet that found it. Just one click to this extension and you can see all markdown tags. It's very useful extension if you work a lot of with markdown. 
 
 ## Updates:
