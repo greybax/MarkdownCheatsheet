@@ -8,6 +8,7 @@ This is handy "Markdown Cheatsheet" Chrome extension. For now you shouldn't reme
 
 ## Updates:
 
+* v2.2.0 - manifest v3
 * v2.1.0 - ability to copy the text via copy button
 
 ## Features:

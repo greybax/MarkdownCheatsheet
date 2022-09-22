@@ -1,8 +1,8 @@
 ﻿{
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Markdown Cheatsheet",
   "description": "This extension shows markdown cheatsheet",
-  "browser_action": {
+  "action": {
     "default_icon": "images/default_icon.png",
     "default_popup": "popup.html"
   },
@@ -14,5 +14,5 @@
   "permissions": [
     "activeTab"
   ],
-  "version": "2.1.1"
+  "version": "2.2.0"
 }
